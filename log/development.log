@@ -25218,3 +25218,5 @@ Served asset /active_admin/print.css - 304 Not Modified (11ms)
 
 Started GET "/assets/active_admin.js" for 127.0.0.1 at 2013-10-13 18:49:32 +0000
 Served asset /active_admin.js - 304 Not Modified (202ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
