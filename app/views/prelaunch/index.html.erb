@@ -1,0 +1,49 @@
+
+<div class="row" style="margin-top: 6%; line-height: 1.5em;">
+	<div class="small-8 large-centered columns" >
+		<div class="title"><h1 style="color: #F88C16;">Aplanke</h1>
+		<h3 style="color: white;">Easy online booking</h3>
+		</div>
+		
+		<div class="large-6 left" style="border-right: solid 1px white; padding-right: 15px;">
+			<div style="padding: 10px 0;">
+				Enter your email and phone number to get launch day notification.
+			</div>
+			<% if flash[:notice] %>
+				<div data-alert class="alert-box" style="font-size: 10px;">
+		        	<%= flash[:notice] %>
+		        	<a href="#" class="close">&times;</a>
+		      	</div>
+			<% end %>
+			<%if flash[:alert]%>
+				<div data-alert class="alert-box success" style="font-size: 10px">
+					<%=flash[:alert]%>
+				</div>
+			<%end%>
+			<%=simple_form_for @prelaunch, :url => {:controller=>:prelaunch, :action=>:create} do |f|%>
+			<%=f.input :email,:label=>false, :placeholder=>"Your Email"%>
+			<div class="row collapse">
+			    <div class="small-3 large-2 columns">
+			    	<span class="prefix">+233</span>
+			    </div>
+			    <div class="small-6 large-8 columns">
+			    	<%=f.input_field :telephone_number, :label=>false, :placeholder=>"Phone number"%>
+		    	</div>
+		    	<div class="small-3 large-2 columns">
+			    	<span class="postfix"><img src="assets/ghana_flag.jpeg"></span>
+			    </div>
+		  	</div>
+			<%=f.submit :submit, :class=>"button small"%>
+		</div>
+
+		<div class="large-6 right" style="padding-left: 15px;">
+			Choose the easier way to make your transport booking
+
+			<p>
+			Easier transport bookings.
+			</p>
+			
+		</div>
+	</div>
+<% end %>
+</div>
