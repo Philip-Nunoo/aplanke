@@ -25017,3 +25017,204 @@ Served asset /active_admin.js - 304 Not Modified (1ms)
 
 Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2013-10-13 18:42:54 +0000
 Served asset /active_admin/orderable.png - 200 OK (33ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2013-10-13 18:45:24 +0000
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.7ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "admin_users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "admin_users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/philip/.rvm/gems/ruby-2.0.0-p247/gems/activeadmin-0.6.0/app/views/active_admin/resource/index.html.arb (374.9ms)
+Completed 200 OK in 400ms (Views: 382.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-10-13 18:45:25 +0000
+Served asset /active_admin.css - 304 Not Modified (166ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2013-10-13 18:45:25 +0000
+Served asset /active_admin/print.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2013-10-13 18:45:25 +0000
+Served asset /active_admin.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-13 18:49:17 +0000
+Processing by PrelaunchController#index as HTML
+  Rendered prelaunch/index.html.erb within layouts/prelaunch (434.2ms)
+Completed 200 OK in 1498ms (Views: 1468.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /application.css - 304 Not Modified (257ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation_and_overrides.css - 304 Not Modified (143ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /active_admin.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/prelaunch.css?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /prelaunch.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.forms.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:20 +0000
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /foundation/foundation.section.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /foundation/foundation.abide.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /foundation/index.js - 304 Not Modified (72ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /jquery-ui.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/active_admin/lib/namespace.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/lib/namespace.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/components/jquery.aa.checkbox-toggler.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.dropdown-menu.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/components/jquery.aa.dropdown-menu.js - 304 Not Modified (139ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.popover.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/components/jquery.aa.popover.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/components/jquery.aa.table-checkbox-toggler.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/pages/application.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/pages/application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/pages/batch_actions.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/pages/batch_actions.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/application.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin/base.js - 304 Not Modified (67ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /active_admin.js - 304 Not Modified (191ms)
+
+
+Started GET "/assets/prelaunch.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /prelaunch.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-13 18:49:21 +0000
+Served asset /application.js - 304 Not Modified (155ms)
+
+
+Started GET "/assets/ghana_flag.jpeg" for 127.0.0.1 at 2013-10-13 18:49:22 +0000
+Served asset /ghana_flag.jpeg - 304 Not Modified (4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-10-13 18:49:31 +0000
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/philip/.rvm/gems/ruby-2.0.0-p247/gems/activeadmin-0.6.0/app/views/active_admin/page/index.html.arb (165.8ms)
+Completed 200 OK in 394ms (Views: 177.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2013-10-13 18:49:32 +0000
+Served asset /active_admin.css - 304 Not Modified (133ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2013-10-13 18:49:32 +0000
+Served asset /active_admin/print.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2013-10-13 18:49:32 +0000
+Served asset /active_admin.js - 304 Not Modified (202ms)
