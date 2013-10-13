@@ -1,5 +1,10 @@
 Aplankelaunch::Application.routes.draw do
   root :to=>"prelaunch#index"
+  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
+
   get "prelaunch/index"
   post "prelaunch/create", :to=>"prelaunch#create",:as=>:prelaunch_create
   # The priority is based upon order of creation:
