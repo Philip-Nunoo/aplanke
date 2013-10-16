@@ -14,10 +14,9 @@ class PrelaunchController < ApplicationController
   			flash[:notice] = "Notification would be sent on day of opening. Thank you."
   			redirect_to root_url
   		else
-  			redirect_to root_url
+  			render 'index'
   		end
   	end
-    redirect_to root_url
   end
 
   def faq
