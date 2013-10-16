@@ -1,16 +1,38 @@
 
 <div class="row" style="margin-top: 6%; line-height: 1.5em;">
 	<div class="small-8 large-centered columns" >
-		<div class="title"><h1 style="color: #F88C16;">Aplanke</h1>
-		<h3 style="color: #0195FF;">Easy online booking<span class="right" style="font-family: Arial; font-size: 11px;"></span></h3>
+		<div class="right">
+			<div class="row">
+			<img src="assets/aplanke.png" class="title"/>
+			</div>
+			<div class="row right" style="clear: both">
+				<h5 style="color: #0195FF;">Easy online booking<span class="right" style="font-family: Arial; font-size: 11px;"></span></h5>
+			</div>
 		</div>
-		
-		<div class="large-6 left" style="border-right: solid 1px grey; padding-right: 15px;">
+		<div style="clear: both"></div>
+
+		<div class="large-6 left" style="padding-left: 15px;">
+			Choose the easier way to make your transport booking
+			<p>
+			</p>
+			<p>
+			Get an easier way to go home this vacation if you are in 
+			KNUST just try aplanke
+			</p>
+			<p>
+			Easier transport bookings.
+			</p>
+			<b>This is temporary available to students of <a target="_blank" href="http://knust.edu.gh/">KNUST</a>
+			please note</b>
+			
+		</div>
+
+		<div class="large-6 right" style="border-left: solid 1px grey; padding-left: 15px;">
 			<div style="padding: 10px 0;">
 				Enter your email and phone number to get launch day notification.
 			</div>
 			<% if flash[:notice] %>
-				<div data-alert class="alert-box" style="font-size: 10px;">
+				<div data-alert class="alert-box" style="font-size: 12px;">
 		        	<%= flash[:notice] %>
 		        	<a href="#" class="close">&times;</a>
 		      	</div>
@@ -55,22 +77,6 @@
 			</a>
 			</div>
 
-		</div>
-
-		<div class="large-6 right" style="padding-left: 15px;">
-			Choose the easier way to make your transport booking
-			<p>
-			This is temporary available to students of KNUST
-			please note
-			</p>
-			<p>
-			Get an easier way to go home this vacation if you are in 
-			KNUST just try aplanke
-			</p>
-			<p>
-			Easier transport bookings.
-			</p>
-			
 		</div>
 	</div>
 </div>

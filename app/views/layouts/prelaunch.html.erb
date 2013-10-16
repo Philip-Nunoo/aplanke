@@ -14,7 +14,7 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "Aplanke" %></title>
   	<link href='http://fonts.googleapis.com/css?family=Bubbler+One|Molle:400italic' rel='stylesheet' type='text/css'>
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
@@ -29,8 +29,8 @@
     	font-size: 11pt/1.3em Georgia,Times New Roman,serif;
     }
 
-    .title h1, h3 {
-    	font-family: 'Molle', cursive;
+    .title {
+      width: 200px;
     }
     html, body {
     	height: 100%;
@@ -70,7 +70,8 @@
  	</div>
  	<footer>
 
-       <div class="fb-like" data-href="https://www.facebook.com/groups/638060206238310/" data-width="The pixel width of the plugin" data-height="10" data-colorscheme="light" data-layout="button_count" data-action="recommend" data-show-faces="true" data-send="false">facebook</div>
+        <div id="fb-root"></div>
+        <div class="fb-like" data-href="https://www.facebook.com/pages/Aplanke" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false">facebook</div>
  	&copy; aplanke 2013
  	</footer>
   </body>
