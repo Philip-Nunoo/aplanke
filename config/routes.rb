@@ -6,6 +6,7 @@ Aplankelaunch::Application.routes.draw do
 
 
   get "prelaunch/index"
+  get "prelaunch/faq"
   post "prelaunch/create", :to=>"prelaunch#create",:as=>:prelaunch_create
   # The priority is based upon order of creation:
   # first created -> highest priority.

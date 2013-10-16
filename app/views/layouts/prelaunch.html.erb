@@ -21,10 +21,11 @@
     <%= csrf_meta_tags %>
     <style type="text/css">
     body{
+      border-top:4px solid #0195FF;
     	font-family: 'Bubbler One', sans-serif;
     	/*background-image: url('assets/bgnoise_lg.png');*/
-    	background-color: #0195FF;
-    	color: white;
+    	/*background-color: #0195FF;*/
+    	/*color: white;*/
     	font-size: 11pt/1.3em Georgia,Times New Roman,serif;
     }
 
@@ -41,33 +42,36 @@
 
 	#main {
 		overflow:auto;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 	}  /* must be same height as the footer */
 
     footer{
-		position: relative;
-		margin-top: -30px; /* negative value of footer height */
-		height: 30px;
-		clear:both;
+  		position: relative;
+  		margin-top: -50px; /* negative value of footer height */
+  		height: 50px;
+  		clear:both;
     	color: white;
     	text-align: center;
     	padding: 10px;
     	font-size: 11px;
     	background-color: #F88C16;
+      border-top:4px solid #0195FF;
     }
     </style>
 
   </head>
 
   <body>
+    <%= javascript_include_tag "application" %>
   	<div id="wrap">
 	  	<div id="main">
-	  	<%= yield %>
-	  	<%= javascript_include_tag "application" %>
+	  	<%= yield %>	  	
 	 	</div>
  	</div>
  	<footer>
- 	aplanke &copy; 2013
+
+       <div class="fb-like" data-href="https://www.facebook.com/groups/638060206238310/" data-width="The pixel width of the plugin" data-height="10" data-colorscheme="light" data-layout="button_count" data-action="recommend" data-show-faces="true" data-send="false">facebook</div>
+ 	&copy; aplanke 2013
  	</footer>
   </body>
 </html>

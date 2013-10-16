@@ -1,0 +1,62 @@
+<style type="text/css">
+	.faq_question{
+		width: 100%;
+		margin: 0;
+		padding: 8px 0;
+	}
+
+	.link{
+		font-size: 16px;
+		font-weight: normal;
+	}
+
+	.link a{
+		color: #F88C16;
+	}
+	.link a:hover{
+		color: black;
+	}
+</style>
+<div class="row" style="margin-top: 6%; line-height: 1.5em;">
+	<div class="small-8 large-centered columns" >
+		<div class="title"><h1 style="color: #F88C16;">Aplanke</h1>
+		<h3 style="color: white;">Easy online booking<span class="right link" style=""><%=link_to "back to home", root_path%> | FAQ</span></h3>
+		</div>
+		<div class="large-6 left" style="border-right: solid 1px white; padding-right: 15px;">
+		<%@faq.each do |faq|%>
+			<div>
+			<button value="<%=faq.id%>" class="faq_question"><%=faq.question%></button>
+			</div>
+		<% end %> 
+		</div>
+
+		<div class="large-6 right" style="padding-left: 15px;">	
+			<span class="question_answer"></span>	
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var faqs = new Array();
+<%@faq.each do |faq| %>
+	faqs.push(new Array(<%=faq.id%>, '<%=faq.question%>', "<%=faq.answer%>"));
+<% end %>
+
+function faqFunction(intvalue){
+	msg = "";
+	$.each(faqs, function(key,value){
+		if (value[0]==intvalue)
+			msg = value[2];
+	});
+
+	$(".question_answer").html(msg);
+}
+
+$(document).ready(function() {
+  faqFunction(1);
+  $(".faq_question").click(
+  	function(){
+  		// faqFunction();
+  		faqFunction($(this).attr("value"));
+  	});
+});
+</script>

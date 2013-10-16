@@ -18,4 +18,8 @@ class PrelaunchController < ApplicationController
   		end
   	end
   end
+
+  def faq
+    @faq = Faq.all
+  end
 end
